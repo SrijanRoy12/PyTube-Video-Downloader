@@ -19,6 +19,39 @@ Perfect for content collectors, educators, and productivity enthusiasts.
 - ⏳ Displays **live download progress + ETA**
 - 🛠️ Auto-merges video/audio into a single **MP4 file**
 - 🧰 Minimal setup, **clean & readable codebase**
+- 🔎 **Extracts video metadata**: title, uploader, views, likes, resolution, codecs, tags, and more
+
+---
+
+## 🔍 Video Info Preview
+
+Before download, the tool displays key insights:
+
+📺 Title: How to Use Python for Automation
+👤 Channel: Programming with John
+⏱ Duration: 12:45
+👀 Views: 1,024,382
+👍 Likes: 56,902
+👎 Dislikes: N/A
+⭐ Average Rating: 4.8/5
+🔗 URL: https://youtube.com/watch?v=xyz123
+📌 Description: Learn how to automate boring tasks using Python in this hands-on tutorial covering real-world examples...
+
+📊 Engagement:
+💬 Comments: 4,523
+🔁 Age-Restricted: No
+🏷️ Tags: python, automation, tutorial...
+
+⚙️ Technical Info:
+📦 Container: mp4
+🎞️ Resolution: 1920x1080
+🎥 FPS: 30
+🔊 Audio Codec: opus
+🎬 Video Codec: avc1
+
+yaml
+Copy
+Edit
 
 ---
 
@@ -79,7 +112,7 @@ ffmpeg version 6.x ...
 This isn’t a huge framework — it's a practical time-saving tool.
 Whether you're a Python beginner or just tired of browser-based downloaders, this simple script does the job beautifully.
 
-💡 Ideas for Extension
+🧠 Ideas for Extension
 Add GUI with Tkinter or PyQt
 
 Support YouTube Playlists
