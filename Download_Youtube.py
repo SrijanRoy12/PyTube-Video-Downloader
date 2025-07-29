@@ -27,6 +27,21 @@ def download_video(url):
             print(f"👤 Channel: {info.get('uploader', 'Unknown')}")
             print(f"⏱ Duration: {info['duration_string']}")
             print(f"👀 Views: {info.get('view_count', 'N/A')}")
+            print(f"👍 Likes: {info.get('like_count', 'N/A')}")
+            print(f"👎 Dislikes: {info.get('dislike_count', 'N/A')}")  # Requires cookies
+            print(f"⭐ Average Rating: {info.get('average_rating', 'N/A')}/5")  
+            print(f"🔗 URL: {info.get('webpage_url', 'N/A')}")
+            print(f"📌 Description: {info.get('description', 'N/A')[:100]}...")  # First 100 chars
+            print("\n📊 Engagement:")
+            print(f"💬 Comments: {info.get('comment_count', 'N/A')}")
+            print(f"🔁 Age-Restricted: {'Yes' if info.get('age_limit', 0) > 0 else 'No'}")
+            print(f"🏷️ Tags: {', '.join(info.get('tags', ['None']))[:50]}...")  # First 50 chars
+            print("\n⚙️ Technical Info:")
+            print(f"📦 Container: {info.get('ext', 'N/A')}")
+            print(f"🎞️ Resolution: {info.get('width', '?')}x{info.get('height', '?')}")
+            print(f"🎥 FPS: {info.get('fps', 'N/A')}")
+            print(f"🔊 Audio Codec: {info.get('acodec', 'N/A')}")
+            print(f"🎬 Video Codec: {info.get('vcodec', 'N/A')}")
             
             # Start download
             print("\n⬇️ Starting download...")
